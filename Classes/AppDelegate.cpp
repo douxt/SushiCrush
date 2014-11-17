@@ -21,6 +21,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
     
     glview->setDesignResolutionSize(320.0f, 480.0f, ResolutionPolicy::FIXED_WIDTH);
+	glview->setFrameSize(320, 480);
     std::vector<std::string> searchPath;
     searchPath.push_back("w640");
     CCFileUtils::getInstance()->setSearchPaths(searchPath);
